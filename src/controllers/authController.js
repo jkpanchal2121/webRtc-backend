@@ -17,7 +17,7 @@ export const register = async (req, res) => {
 
     const user = await User.create({ username, email, password, avatar });
 
-    res.status(201).json({
+    res.status(200).json({
       _id: user._id,
       username: user.username,
       email: user.email,
